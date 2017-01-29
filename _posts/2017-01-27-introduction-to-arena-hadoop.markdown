@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to arena-hadoop"
-date:   2017-01-28 12:16:49 -0800
+date:   2017-01-27 12:16:49 -0800
 categories: posts update
 ---
 
