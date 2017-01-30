@@ -19,24 +19,17 @@ description: > # this means to ignore newlines until "baseurl:"
   arena-hadoop (a multi-home dockerized hadoop cluster) etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:
+github_username: 
+author: Binyuan Chen
+email: binyuanchen@gmail.com
 
-# author:
-#   name: Binyuan Chen
-#   bio: ""
-#   email: binyuanchen@gmail.com
-#   twitter: binyuanchen
-#   github: binyuanchen
-#   linkedin: binyuanchen
-
-# links:
-#   - title: About Me
-#     url: /aboutme/
-#   - title: Blogs
-#     url: /blogs/
-#   - title: Projects
-#     url: /projects/
+nav_links:
+  - display: About
+    url: /about/
+  - display: Blogs
+    url: /blogs/
+  - display: Projects
+    url: /projects/
 
 # Build settings
 markdown: kramdown
