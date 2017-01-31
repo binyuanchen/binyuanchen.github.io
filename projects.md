@@ -4,6 +4,8 @@ permalink: /projects/
 title: Projects
 description: "My recent projects"
 tags: [open source, projects]
+image:
+  file: lake1.jpg
 ---
 
 ## Kmspan

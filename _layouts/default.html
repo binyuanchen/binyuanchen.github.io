@@ -5,10 +5,17 @@
   </head>
 
   {% include head.html %}
+  {% include header.html %}
+  {% if page.image.file %}
+    <div class="wrapper">
+    <img src=
+        "{{ site.baseurl }}/images/{{ page.image.file }}">
+    </div>
+  {% endif %}
 
   <body>
 
-    {% include header.html %}
+
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
