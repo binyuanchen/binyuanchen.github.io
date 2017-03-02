@@ -14,4 +14,4 @@ Kafka message span. [More](https://github.com/binyuanchen/kmspan)
 
 ## arena-hadoop
 
-A multi-home dockerized hadoop cluster. [More](https://github.com/binyuanchen/arena-hadoop)
+A multi-hosts dockerized CDH hadoop cluster. [More](https://github.com/binyuanchen/arena-hadoop)
