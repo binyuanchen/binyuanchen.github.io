@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to arena-hadoop"
+title:  "Introduction to arena-dev-cdh-hadoop"
 date:   2017-01-27 12:16:49 -0800
 categories: posts update
 ---
@@ -19,6 +19,6 @@ public class A {
 }
 {% endhighlight %}
 
-Check out arena-hadoop at [arena-hadoop github][arena-hadoop-github].
+Check out arena-dev-cdh-hadoop at [arena-dev-cdh-hadoop github][arena-dev-cdh-hadoop-github].
 
-[arena-hadoop-github]: https://github.com/binyuanchen/arena-hadoop
+[arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
