@@ -136,7 +136,7 @@ DOCKER_TLS=auto
 SERVERKEY=/var/lib/boot2docker/server-key.pem
 SERVERCERT=/var/lib/boot2docker/server.pem
 ```
-, then you will modify the profile so it will look like this (notice the added two lines in the EXTRA_ARGS),
+, then you will modify the profile so it will look like this,
 
 ```bash
 docker@mgr1:~$ cat /var/lib/boot2docker/profile
@@ -152,6 +152,12 @@ DOCKER_STORAGE=aufs
 DOCKER_TLS=auto
 SERVERKEY=/var/lib/boot2docker/server-key.pem
 SERVERCERT=/var/lib/boot2docker/server.pem
+```
+Note the added 2 lines in the EXTRA_ARGS,
+
+```bash
+--cluster-store=consul://192.168.99.100:8500/network
+--cluster-advertise=192.168.99.101:2376
 ```
 
 Exit the ssh session from mgr1 after changing the profile.
