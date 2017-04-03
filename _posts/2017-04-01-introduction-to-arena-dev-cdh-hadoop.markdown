@@ -70,14 +70,20 @@ After these four hosts are created successfully, collect the ip addresses assign
 
 ```bash
 docker-machine ip mh-keystore
-192.168.99.100
-docker-machine ip mgr1
-192.168.99.101
-docker-machine ip mgr2
-192.168.99.102
-docker-machine ip mgr3
-192.168.99.103
 ```
+192.168.99.100
+```bash
+docker-machine ip mgr1
+```
+192.168.99.101
+```bash
+docker-machine ip mgr2
+```
+192.168.99.102
+```bash
+docker-machine ip mgr3
+```
+192.168.99.103
 
 > The above ips are the results on my machine, you may get different ips. But it is nevertheless important to remember the mappings between the docker host names and their assigned ips, as we will directly use these ips below without mentioning which hosts they belong to.
 
