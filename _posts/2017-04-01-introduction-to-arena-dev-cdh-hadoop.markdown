@@ -33,7 +33,7 @@ System and Software Requirements
 
 * 120GB+ disk space (other than your regular usage)
 * Python 2.7+
-* docker engine and docker-machine (for example, you can install ['Docker For Mac'](https://docs.docker.com/docker-for-mac/)
+* docker engine and docker-machine (for example, you can install ['Docker For Mac'](https://docs.docker.com/docker-for-mac/))
 * virtualbox (See https://www.virtualbox.org/wiki/Downloads for downloading for OSX hosts)
 * [paramiko](http://www.paramiko.org/installing.html).
 * `git clone https://github.com/binyuanchen/arena-dev-cdh-hadoop.git` (later we will refer to the absolute path to the root directory of this cloned project as \<ARENA-SRC-ROOT\>)
