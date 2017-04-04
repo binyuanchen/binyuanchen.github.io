@@ -39,8 +39,6 @@ I decide to open source it and hope it is in any help for you.
 
 This blog talks about how to create such a CDH Hadoop cluster using [__Arena-dev-cdh-hadoop__](arena-dev-cdh-hadoop-github).
 
-But is that all: just creating a setup? Certainly not. [TODO]
-
 System and Software Requirements
 ------------------------------
 * Mac OS X (Yosemite and above)
