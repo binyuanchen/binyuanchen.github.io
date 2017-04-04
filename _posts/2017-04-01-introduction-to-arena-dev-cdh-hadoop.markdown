@@ -580,6 +580,10 @@ On your Mac, open a browser and access this URL, login with admin:admin.
 http://cmc1.net1:7180/cmf/login
 ```
 
+If above steps are completed without issues, you should see the admin UI similar to this (assuming you are deploying with config_3.json):
+
+![CM Admin UI]({{ site.url }}/images/cmui.png)
+
 At this point, your deployment is done and your have the cluster.
 
 <a name="Step33">Step 3.3</a> Post deployment manual work
