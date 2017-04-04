@@ -551,7 +551,7 @@ python deployer.py \
 --cdh_full_version 5.7.1 \
 --cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
 --gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
---config_file_location ./config_3k.json \
+--config_file_location ./config_3.json \
 --substitution_file_location ./substitution.json \
 --app_superuser appadmin
 ```
