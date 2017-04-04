@@ -22,22 +22,17 @@ td{
 Initiative
 ---
 
-As a Hadoop user and a developer, I constantly feel the need to connect my application code to a CDH Hadoop cluster. My initial try was to connect an existing Hadoop cluster in Jenkins or in QE environment. Soon I found out that this approach is not practical. For example, my applications writes into the cluster and sometimes this confuses the automated tests. Another example, sometimes I try to do destructive tests on Hadoop cluster such as restarting HBASE region server on one node in the middle of writing data into it, or shutting down one running Spark container to see how my spark application behaves.
+This blog is for developers who work on application code that accesses CDH Hadoop system. Here we talk about how to create a three-node (yes, only 3, no more and no less) CDH Hadoop cluster running on your local Mac machine, using open source project [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop).
 
-In summary, I want such a Hadoop cluster that,
+Some highlight of such a cluster,
 
-* it is running on my local, so it is dedicated to my use,
+* it runs on your local Mac,
 * it is a cluster with more than one node,
-* I can change the server side however I want,
-* if I screw this cluster, I can quickly spawn another one, exactly the same as before,
-* the cluster is generic and standard enough in the sense after I verify my application code against it, it takes minimal modifications to against production clusters,
-* it doesn't need to be ready for performance testing or production usage.
+* if you screw the cluster, you can quickly setup a new one using deployer script (python),
+* the cluster is generic enough in the sense that once you verified your application code works well with the cluster, it doesn't take much effort to make it work with your production cluster,
+* the cluster is not for performance or production use.
 
-Finally I decide to build one for myself, this is [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop): a three-node (yes, only 3, no more and no less) CDH Hadoop cluster running on your local Mac machine.
-
-I decide to open source it and hope it is in any help for you.
-
-This blog talks about how to create such a CDH Hadoop cluster using [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop).
+With such a cluster, you no longer worry about confusions caused when your application code writes into a Jenkins or automation testing Hadoop cluster which is shared by automation tests.
 
 System and Software Requirements
 ------------------------------
