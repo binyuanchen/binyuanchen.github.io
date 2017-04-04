@@ -586,25 +586,30 @@ If above steps are completed without issues, you should see the admin UI similar
 
 At this point, your deployment is done and your have the cluster.
 
-<a name="Step33">Step 3.3</a> Post deployment manual work
+Manual changes after cluster deployment
+------------------------------
+
+Depending on what your client application is doing against the cluster, you may need to do one (or several) of the below manual changes after cluster deployment.
+
+<a name="manual">MANUAL-1</a> grant everyone full access to /data
 ====
 
-[TODO]
+In tab mgr1,
 
-Some declarations
-------------------------------
-[TODO]
+```bash
+docker exec -it cmc1 bash
+```
+, then execute,
+
+```bash
+chmod 777 -R /data/
+```
+
+Do the same for mgr2 and mgr3.
 
 Limitations and known issues
 ------------------------------
 [TODO]
 
-(Near) Future plans
-------------------------------
-[TODO]
-
-Want to report an issue or need a feature?
-------------------------------
-My email: binyuanchen@gmail.com
 
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
