@@ -27,7 +27,7 @@ This blog is for developers who work on application code that accesses CDH Hadoo
 Some highlight of such a cluster,
 
 * it runs on your local Mac,
-* it is a cluster with more than one node,
+* it is a cluster with more than one node, all nodes are running as docker containers,
 * if you screw the cluster, you can quickly setup a new one using deployer script (python),
 * the cluster is generic enough in the sense that once you verified your application code works well with the cluster, it doesn't take much effort to make it work with your production cluster,
 * the cluster is not for performance or production use.
