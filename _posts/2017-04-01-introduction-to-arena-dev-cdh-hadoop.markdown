@@ -33,11 +33,11 @@ In summary, I want such a Hadoop cluster that,
 * the cluster is generic and standard enough in the sense after I verify my application code against it, it takes minimal modifications to against production clusters,
 * it doesn't need to be ready for performance testing or production usage.
 
-Finally I decide to build one for myself, this is [__Arena-dev-cdh-hadoop__](arena-dev-cdh-hadoop-github): a three-node (yes, only 3, no more and no less) CDH Hadoop cluster running on your local Mac machine.
+Finally I decide to build one for myself, this is [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop): a three-node (yes, only 3, no more and no less) CDH Hadoop cluster running on your local Mac machine.
 
 I decide to open source it and hope it is in any help for you.
 
-This blog talks about how to create such a CDH Hadoop cluster using [__Arena-dev-cdh-hadoop__](arena-dev-cdh-hadoop-github).
+This blog talks about how to create such a CDH Hadoop cluster using [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop).
 
 System and Software Requirements
 ------------------------------
@@ -486,25 +486,7 @@ cd \<ARENA-SRC-ROOT\>/deploy/
 , then execute,
 
 ```bash
-python deployer.py \
---cm_user admin \
---cm_pass admin \
---cm_api_entrypoint cmc1.net1:7180 \
---cluster_name Cluster1 \
---cm_api_version v12 \
---cmserver cmc1.net1 \
---cmagents cmc2.net1,cmc3.net1 \
---ssh_user root \
---ssh_pass root \
---ext_ssh_port 2222 \
---cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
---cdh_version CDH5 \
---cdh_full_version 5.7.1 \
---cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
---gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
---config_file_location ./config_1.json \
---substitution_file_location ./substitution.json \
---app_superuser appadmin
+[TODO]
 ```
 
 <a name="Step31S2">Scenario-2</a> If you are deploying cluster with config_2.json
@@ -518,25 +500,7 @@ cd \<ARENA-SRC-ROOT\>/deploy/
 , then execute,
 
 ```bash
-python deployer.py \
---cm_user admin \
---cm_pass admin \
---cm_api_entrypoint cmc1.net1:7180 \
---cluster_name Cluster1 \
---cm_api_version v12 \
---cmserver cmc1.net1 \
---cmagents cmc2.net1,cmc3.net1 \
---ssh_user root \
---ssh_pass root \
---ext_ssh_port 2222 \
---cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
---cdh_version CDH5 \
---cdh_full_version 5.7.1 \
---cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
---gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
---config_file_location ./config_2.json \
---substitution_file_location ./substitution.json \
---app_superuser appadmin
+[TODO]
 ```
 
 <a name="Step31S3">Scenario-3</a> If you are deploying cluster with config_3.json
