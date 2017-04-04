@@ -476,7 +476,7 @@ You will deploy your Hadoop cluster by picking any one of below scenarios.
 In tab mgr1,
 
 ```bash
-cd \<ARENA-SRC-ROOT\>/deploy/
+cd <ARENA-SRC-ROOT>/deploy/
 ```
 , then execute,
 
@@ -490,7 +490,7 @@ cd \<ARENA-SRC-ROOT\>/deploy/
 In tab mgr1,
 
 ```bash
-cd \<ARENA-SRC-ROOT\>/deploy/
+cd <ARENA-SRC-ROOT>/deploy/
 ```
 , then execute,
 
@@ -504,30 +504,12 @@ cd \<ARENA-SRC-ROOT\>/deploy/
 In tab mgr1,
 
 ```bash
-cd \<ARENA-SRC-ROOT\>/deploy/
+cd <ARENA-SRC-ROOT>/deploy/
 ```
 , then execute,
 
 ```bash
-python deployer.py \
---cm_user admin \
---cm_pass admin \
---cm_api_entrypoint cmc1.net1:7180 \
---cluster_name Cluster1 \
---cm_api_version v12 \
---cmserver cmc1.net1 \
---cmagents cmc2.net1,cmc3.net1 \
---ssh_user root \
---ssh_pass root \
---ext_ssh_port 2222 \
---cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
---cdh_version CDH5 \
---cdh_full_version 5.7.1 \
---cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
---gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
---config_file_location ./config_3.json \
---substitution_file_location ./substitution.json \
---app_superuser appadmin
+[TODO]
 ```
 
 <a name="Step32">Step 3.2</a> Login to Cloudera Manager UI (running on cmc1) to check cluster status
