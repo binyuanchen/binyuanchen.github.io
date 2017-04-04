@@ -580,7 +580,27 @@ On your Mac, open a browser and access this URL, login with admin:admin.
 http://cmc1.net1:7180/cmf/login
 ```
 
+At this point, your deployment is done and your have the cluster.
 
-Check out arena-dev-cdh-hadoop at [arena-dev-cdh-hadoop github][arena-dev-cdh-hadoop-github].
+<a name="Step33">Step 3.3</a> Post deployment manual work
+====
+
+[TODO]
+
+Some declarations
+------------------------------
+[TODO]
+
+Limitations and known issues
+------------------------------
+[TODO]
+
+(Near) Future plans
+------------------------------
+[TODO]
+
+Want to report an issue or need a feature?
+------------------------------
+My email: binyuanchen@gmail.com
 
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
