@@ -215,20 +215,20 @@ In tab mgr1, execute,
 ```bash
 docker-machine restart mgr1
 docker-machine ip mgr1
-192.168.99.101
 ```
+192.168.99.101
 
 ```bash
 docker-machine restart mgr2
 docker-machine ip mgr2
-192.168.99.102
 ```
+192.168.99.102
 
 ```bash
 docker-machine restart mgr3
 docker-machine ip mgr3
-192.168.99.103
 ```
+192.168.99.103
 
 At this point, you can verify that all three mgr hosts has successfully connected to the consul store, by browsing to url,
 ```http
