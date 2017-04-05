@@ -456,8 +456,8 @@ Arena-dev-cdh-hadoop provides deploy scripts to create a three-node CDH Hadoop c
 
 
 |----------------+----------------------------------+-----------------|
-|  CONFIG FILE   |  CLUSTER SPEC                    | TO DEPLOY,      |
-|:---------------|:---------------------------------|:----------------|
+|  Scenario/Config   |  Cluster Spec                    | to deploy,      |
+|:---------------:|:---------------------------------|:----------------|
 | config_1.json  |Simple AuthN,<br>Zookeeper,<br>HDFS (NN, SN, DN),<br> HBASE(MASTER, RS) | [Follow](#Step31S1)      |
 |----------------+----------------------------------+-----------------|
 | config_2.json  |Simple AuthN,<br>Zookeeper,<br>HDFS(NN, DN, JN, HA/Nameservice),<br>* Nameservice id: nameservice1<br>* namenode1: active on cmc1<br>* namenode2: standby on cmc2<br>HBASE(Master, RS),<br>Pig,<br>MR1 (mapreduce 0.20),<br>* JobTracler HA, and two FCs | [Follow](#Step31S2)    |
@@ -470,8 +470,7 @@ Arena-dev-cdh-hadoop provides deploy scripts to create a three-node CDH Hadoop c
 
 You will deploy your Hadoop cluster by picking any one of below scenarios.
 
-<a name="Step31S1">Scenario-1</a> If you are deploying cluster with config_1.json
-====
+<a name="Step31S1">__Scenario-1__</a> __If you are deploying cluster with config_1.json__
 
 In tab mgr1,
 
@@ -481,11 +480,28 @@ cd <ARENA-SRC-ROOT>/deploy/
 , then execute,
 
 ```bash
-[TODO]
+python deployer.py \
+--cm_user admin \
+--cm_pass admin \
+--cm_api_entrypoint cmc1.net1:7180 \
+--cluster_name Cluster1 \
+--cm_api_version v12 \
+--cmserver cmc1.net1 \
+--cmagents cmc2.net1,cmc3.net1 \
+--ssh_user root \
+--ssh_pass root \
+--ext_ssh_port 2222 \
+--cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
+--cdh_version CDH5 \
+--cdh_full_version 5.7.1 \
+--cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
+--gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
+--config_file_location ./config_1.json \
+--substitution_file_location ./substitution.json \
+--app_superuser appadmin
 ```
 
-<a name="Step31S2">Scenario-2</a> If you are deploying cluster with config_2.json
-====
+<a name="Step31S2">__Scenario-2__</a> __If you are deploying cluster with config_2.json__
 
 In tab mgr1,
 
@@ -495,11 +511,28 @@ cd <ARENA-SRC-ROOT>/deploy/
 , then execute,
 
 ```bash
-[TODO]
+python deployer.py \
+--cm_user admin \
+--cm_pass admin \
+--cm_api_entrypoint cmc1.net1:7180 \
+--cluster_name Cluster1 \
+--cm_api_version v12 \
+--cmserver cmc1.net1 \
+--cmagents cmc2.net1,cmc3.net1 \
+--ssh_user root \
+--ssh_pass root \
+--ext_ssh_port 2222 \
+--cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
+--cdh_version CDH5 \
+--cdh_full_version 5.7.1 \
+--cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
+--gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
+--config_file_location ./config_2.json \
+--substitution_file_location ./substitution.json \
+--app_superuser appadmin
 ```
 
-<a name="Step31S3">Scenario-3</a> If you are deploying cluster with config_3.json
-====
+<a name="Step31S3">__Scenario-3__</a> __If you are deploying cluster with config_3.json__
 
 In tab mgr1,
 
@@ -509,7 +542,25 @@ cd <ARENA-SRC-ROOT>/deploy/
 , then execute,
 
 ```bash
-[TODO]
+python deployer.py \
+--cm_user admin \
+--cm_pass admin \
+--cm_api_entrypoint cmc1.net1:7180 \
+--cluster_name Cluster1 \
+--cm_api_version v12 \
+--cmserver cmc1.net1 \
+--cmagents cmc2.net1,cmc3.net1 \
+--ssh_user root \
+--ssh_pass root \
+--ext_ssh_port 2222 \
+--cdh_parcel 5.7.1-1.cdh5.7.1.p0.11 \
+--cdh_version CDH5 \
+--cdh_full_version 5.7.1 \
+--cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
+--gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
+--config_file_location ./config_3k.json \
+--substitution_file_location ./substitution.json \
+--app_superuser appadmin
 ```
 
 <a name="Step32">Step 3.2</a> Login to Cloudera Manager UI (running on cmc1) to check cluster status
