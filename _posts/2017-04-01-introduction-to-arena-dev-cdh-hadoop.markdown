@@ -56,7 +56,7 @@ Part 1: Prepare the infrastructure
 <a name="Step11">Step 1.1</a>
 ====
 
-open a terminal window and create 4 tabs in it and name the tabs as __mh-keystore__, __mgr2__, __mgr3__ and __mgr4__, later I will refer to these tabs as __tab mgr1__ or alike, when we will execute some commands against docker hosts.
+open a terminal window and create 4 tabs in it and name the tabs as __mh-keystore__, __mgr1__, __mgr2__ and __mgr3__, later I will refer to these tabs as __tab mgr1__ or alike, when we will execute some commands against docker hosts.
 
 An illustration of the four tabs is,
 
