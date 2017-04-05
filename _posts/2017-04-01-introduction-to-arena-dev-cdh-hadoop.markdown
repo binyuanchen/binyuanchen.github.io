@@ -74,7 +74,7 @@ docker-machine create -d virtualbox --virtualbox-disk-size "40960" --virtualbox-
 docker-machine create -d virtualbox --virtualbox-disk-size "40960" --virtualbox-memory "6144" mgr3
 ```
 
-> This creats four docker hosts, with names mh-keystore, mgr1, mgr2 and mgr3. mgr1 is configured to have 40GB of disk and 8GB of memory, mgr2 and mgr3 have the same disk, but with 6GB of memory each.
+> This four commands create four docker hosts, with names mh-keystore, mgr1, mgr2 and mgr3. mgr1 is configured to have 40GB of disk and 8GB of memory, mgr2 and mgr3 have the same disk, but with 6GB of memory each.
 
 After these four hosts are created successfully, collect the ip addresses assigned to these hosts,
 
