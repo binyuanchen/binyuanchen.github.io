@@ -268,7 +268,7 @@ docker network ls
 Part 2: Deploying containers
 ------------------------------------
 
-All arena hadoop docker container images are available at [docker hub](hub.docker.io).
+All arena hadoop docker container images are available at [docker hub](https://hub.docker.com/r/binyuanchen/).
 
 <a name="Step21">Step 2.1</a> Create and run cmserver node, and its proxy
 ====
