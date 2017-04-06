@@ -563,6 +563,29 @@ python deployer.py \
 --app_superuser appadmin
 ```
 
+The deployment roughly takes 10-15 minutes. If the deployment succeeds, you will see the a 'DONE' message.
+
+If for some reason the deployment fails, you can clean up the arean Hadoop docker container,
+
+In tab mgr1, execute,
+
+```bash
+docker stop cmc1 proxy1; docker rm -v cmc1 proxy1
+```
+
+In tab mgr2, execute,
+
+```bash
+docker stop cmc2 proxy2; docker rm -v cmc2 proxy2
+```
+
+In tab mgr1, execute,
+
+```bash
+docker stop cmc3 proxy3; docker rm -v cmc3 proxy3
+```
+, then go back to [step](#Step21) and start from there.
+
 <a name="Step32">Step 3.2</a> Login to Cloudera Manager UI (running on cmc1) to check cluster status
 ====
 
