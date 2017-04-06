@@ -6,18 +6,6 @@ categories: posts update
 ---
 This page is still under construction.
 
-[TODO] add some intro to kmspan here.
-
-Some sample code:
-
-{% highlight java %}
-public class A {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}
-{% endhighlight %}
-
 Check out kmspan at [Kmspan github][kmspan-github].
 
 [kmspan-github]: https://github.com/binyuanchen/kmspan
