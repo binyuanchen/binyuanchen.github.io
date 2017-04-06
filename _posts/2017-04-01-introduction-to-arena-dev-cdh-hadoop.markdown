@@ -45,7 +45,8 @@ System and Software Requirements
 * Python 2.7+
 * docker engine and docker-machine (for example, you can install ['Docker For Mac'](https://docs.docker.com/docker-for-mac/))
 * virtualbox (See https://www.virtualbox.org/wiki/Downloads for downloading for OSX hosts)
-* [paramiko](http://www.paramiko.org/installing.html).
+* install pip on you Mac if you do not have it: __sudo easy_install pip__
+* install [paramiko](http://www.paramiko.org/installing.html): __pip install paramiko --user__ (the --user option is only if you want to install paramiko for your current user)
 * `git clone https://github.com/binyuanchen/arena-dev-cdh-hadoop.git` (later we will refer to the absolute path to the root directory of this cloned project as \<ARENA-SRC-ROOT\>)
 
 
@@ -558,7 +559,7 @@ python deployer.py \
 --cdh_full_version 5.7.1 \
 --cm_repo_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.7.1" \
 --gpg_key_custom_url "http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera" \
---config_file_location ./config_3k.json \
+--config_file_location ./config_3.json \
 --substitution_file_location ./substitution.json \
 --app_superuser appadmin
 ```
