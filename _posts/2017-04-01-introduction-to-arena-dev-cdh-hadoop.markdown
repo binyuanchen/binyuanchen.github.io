@@ -623,6 +623,10 @@ chmod 777 -R /data/
 
 Do the same for mgr2 and mgr3.
 
+How to use this cluster?
+------------------------------
+[TODO] I will write another blog regarding how to use this cluster (writing Java clients, running Pig jobs, running Spark jobs etc.) Coming soon...
+
 Limitations and known issues
 ------------------------------
 [TODO]
