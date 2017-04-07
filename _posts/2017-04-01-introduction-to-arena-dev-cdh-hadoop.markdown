@@ -627,6 +627,8 @@ How to use this cluster?
 ------------------------------
 [TODO] I will write another blog regarding how to use this cluster (writing Java clients, running Pig jobs, running Spark jobs etc.) Coming soon...
 
+For now, keep in mind that you can not do much with the default login user 'root'. During the cluster deploy, a super user 'appadmin' is create, you should use this user (__su - appadmin__) to do everything you want on this cluster. 
+
 Limitations and known issues
 ------------------------------
 [TODO]
