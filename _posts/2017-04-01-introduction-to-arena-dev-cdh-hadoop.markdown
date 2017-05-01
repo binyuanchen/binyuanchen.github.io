@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to arena-dev-cdh-hadoop"
+title:  "Just enough configurations for Hadoop applications"
 date:   2017-04-01 12:16:49 -0800
 categories: posts update
 ---
@@ -19,27 +19,20 @@ td{
 }
 </style>
 
-Initiative
----
+DISCLAIMER: as of April 28, 2017, I decided to move the instructions of creating a 3-node CDH Hadoop cluster to this [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki). Please follow this link if you want to setup. Below I will re-purpose this blog for illustrating the examples of arena-dev-cdh-hadoop with minimal configurations.
+{: style="color:red; font-size: 100%; text-align: left;"}
 
-This blog is for developers who write application code (client) that accesses CDH Hadoop system. We talk about how to create a three-node CDH Hadoop cluster running on your local Mac machine, using open source project [arena-dev-cdh-hadoop](https://github.com/binyuanchen/arena-dev-cdh-hadoop).
+This blog is for developers who write application code (client) that accesses CDH Hadoop system.
 
-Some highlight of such a cluster,
+Making a client application talk to a CDH Hadoop system, can be a small or big effort, depending on what you want to achieve. If you just want your connect to work with Hadoop, a simple approach is to deploy your client application on a Hadoop gateway node so you get all Hadoop services' client configurations, as well as refreshed configurations when they change, and just include all configurations files in your classpath (or just utilize the system environment variables). You do not have to understand how your client is able to talk to HBase, it just does, because all Hadoop services' client configurations are available to your client.
 
-* it runs on your local Mac,
-* it is a cluster with more than one node, all nodes are running as docker containers,
-* if you screw the cluster, you can quickly setup a new one using deployer script (python),
-* the cluster is generic enough in the sense that once you verified your application code works well with the cluster, it doesn't take much effort to make it work with your production cluster,
-* the cluster is not for performance or production use.
+But, many developers are not satisfied that the client is able to talk to Hadoop, but also want to know exactly what configurations makes that happen.
 
-With such a cluster, you no longer worry about confusions caused when your application code writes into a Jenkins or automation testing Hadoop cluster which is shared by automation tests.
+__Here is the purpose of this blog__: We will illustrate a series of examples. Each example has one specific purpose (such as to create HBase table and read and write, with simple authentication etc.). For each example, we demonstrate and explain the set of configurations that are just enough to make the example work.
 
-As of April 28, 2017, I moved most of the setup steps in the blog to the project wiki at [arena-dev-cdh-hadoop wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki).
+Of course, we can't do this without a CDH Hadoop cluster, for you and me to understand each other, please follow the [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki) to setup a 3-node CDH Hadoop cluster first.
 
-Here is an example of the cloudera manager admin UI after you set this cluster up:
-
-![CM Admin UI]({{ site.url }}/images/cmui.png)
-
+[TODO] examples
 
 
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
