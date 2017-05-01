@@ -19,7 +19,7 @@ td{
 }
 </style>
 
-DISCLAIMER: as of April 28, 2017, I decided to move the instructions of creating a 3-node CDH Hadoop cluster to this [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki). Please follow this link if you want to setup. Below I will re-purpose this blog for illustrating the examples of arena-dev-cdh-hadoop with minimal configurations.
+DISCLAIMER: as of April 28, 2017, I decided to move the instructions of creating a 3-node CDH Hadoop cluster to this [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki/Instructions-to-setup-a-dockerized-3-node-CDH-Hadoop-cluster-V0.1). Please follow this link if you want to setup. Below I will re-purpose this blog for illustrating the examples of arena-dev-cdh-hadoop with minimal configurations.
 {: style="color:red; font-size: 100%; text-align: left;"}
 
 This blog is for developers who write application code (client) that accesses CDH Hadoop system.
@@ -30,7 +30,7 @@ But, many developers are not satisfied that the client is able to talk to Hadoop
 
 __Here is the purpose of this blog__: We will illustrate a series of examples. Each example has one specific purpose (such as to create HBase table and read and write, with simple authentication etc.). For each example, we demonstrate and explain the set of configurations that are just enough to make the example work.
 
-Of course, we can't do this without a CDH Hadoop cluster, for you and me to understand each other, please follow the [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki) to setup a 3-node CDH Hadoop cluster first.
+Of course, we can't do this without a CDH Hadoop cluster, for you and me to understand each other, please follow the [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki/Instructions-to-setup-a-dockerized-3-node-CDH-Hadoop-cluster-V0.1) to setup a 3-node CDH Hadoop cluster first.
 
 [TODO] examples
 
