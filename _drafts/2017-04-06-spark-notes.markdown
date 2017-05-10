@@ -19,4 +19,11 @@ td{
 }
 </style>
 
+What happens when you create a SparkContext
+
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/spark-sparkcontext-creating-instance-internals.html
+
+SchedulerBackend — Pluggable Scheduler Backends
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/spark-SchedulerBackend.html
+
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
