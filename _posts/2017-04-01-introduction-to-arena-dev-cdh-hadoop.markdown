@@ -32,29 +32,36 @@ __Here is the purpose of this blog__: We will illustrate a series of examples. E
 
 Of course, we can't do this without a CDH Hadoop cluster, for you and me to understand each other, please follow the [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki/Instructions-to-setup-a-dockerized-3-node-CDH-Hadoop-cluster-V0.1) to setup a 3-node CDH Hadoop cluster first.
 
-[TODO] examples
-
 [HBase Client  Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/hbase_example/src/main/java/org/arena_dev_cdh_hadoop/hbase/HBaseClientSimpleExample.java)
 ---
-
+[TODO]
 
 [HBase Client Example (Kerberos)](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/hbase_example/src/main/java/org/arena_dev_cdh_hadoop/hbase/HBaseClientKerberosExample.java)
 ---
+[TODO]
 
 [Pig Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/pig_example/src/main/java/org/arena_dev_cdh_hadoop/pig/PigSimpleExample.java)
 ---
+[TODO]
+
+Pig Example (Kerberos)
+---
+[TODO]
 
 [Spark Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/spark_example/src/main/java/org/arena_dev_cdh_hadoop/spark/ScanUserDataSparkSimpleApp.java)
 ---
+[TODO]
 
 Spark Example (Kerberos)
 ---
+[TODO]
 
 Spark Remote Client Example
 ---
+[TODO]
 
 Spark Remote Client Example (Kerberos)
 ---
-
+[TODO]
 
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
