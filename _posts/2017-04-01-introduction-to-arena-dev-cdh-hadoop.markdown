@@ -34,5 +34,27 @@ Of course, we can't do this without a CDH Hadoop cluster, for you and me to unde
 
 [TODO] examples
 
+[HBase Client  Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/hbase_example/src/main/java/org/arena_dev_cdh_hadoop/hbase/HBaseClientSimpleExample.java)
+---
+
+
+[HBase Client Example (Kerberos)](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/hbase_example/src/main/java/org/arena_dev_cdh_hadoop/hbase/HBaseClientKerberosExample.java)
+---
+
+[Pig Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/pig_example/src/main/java/org/arena_dev_cdh_hadoop/pig/PigSimpleExample.java)
+---
+
+[Spark Example](https://github.com/binyuanchen/arena-dev-cdh-hadoop/blob/master/examples/spark_example/src/main/java/org/arena_dev_cdh_hadoop/spark/ScanUserDataSparkSimpleApp.java)
+---
+
+Spark Example (Kerberos)
+---
+
+Spark Remote Client Example
+---
+
+Spark Remote Client Example (Kerberos)
+---
+
 
 [arena-dev-cdh-hadoop-github]: https://github.com/binyuanchen/arena-dev-cdh-hadoop
