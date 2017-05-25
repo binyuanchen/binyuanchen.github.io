@@ -19,7 +19,7 @@ td{
 }
 </style>
 
-DISCLAIMER: as of April 28, 2017, I decided to move the instructions of creating a 3-node CDH Hadoop cluster to this [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki/Instructions-to-setup-a-dockerized-3-node-CDH-Hadoop-cluster-V0.1). Please follow this link if you want to setup. Below I will re-purpose this blog for illustrating the examples of arena-dev-cdh-hadoop with minimal configurations.
+DISCLAIMER: as of May 25, 2017, I have moved the instructions of creating a 3-node CDH Hadoop cluster to this [wiki](https://github.com/binyuanchen/arena-dev-cdh-hadoop/wiki/V0.2). Please follow this link if you want to setup. Below I will re-purpose this blog for illustrating the examples of arena-dev-cdh-hadoop with minimal configurations.
 {: style="color:red; font-size: 100%; text-align: left;"}
 
 This blog is for developers who write application code (client) that accesses CDH Hadoop system.
